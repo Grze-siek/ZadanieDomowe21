@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rejestracja</title>
+</head>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+<body>
+<div style="margin-left: 300px; margin-right: 300px; margin-bottom: 300px;">
+    <h2>Rejestracja</h2>
+    <form>
+        <div class="form-group">
+            <label for="name">Imię</label>
+            <input type="text" class="form-control" id="name" placeholder="Wpisz imię">
+        </div>
+        <div class="form-group">
+            <label for="lastName">Nazwisko</label>
+            <input type="text" class="form-control" id="lastName" placeholder="Wpisz nazwisko">
+        </div>
+    </form>
+    <form>
+        <fieldset class="form-group">
+            <div class="row">
+                <legend class="col-form-label col-sm-2 pt-0">Płeć</legend>
+                <div class="col-sm-10">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="gridRadios" id="woman" value="option1" checked>
+                        <label class="form-check-label" for="woman">
+                            Kobieta
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="gridRadios" id="man" value="option2">
+                        <label class="form-check-label" for="man">
+                            Mężczyzna
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+    </form>
+    <div class="form-group">
+        <label for="mailAddress">Adres email</label>
+        <input type="email" class="form-control" id="mailAddress" placeholder="Wpisz adres email">
+    </div>
+        <label for="password">Hasło</label>
+        <input type="password" id="password" class="form-control" aria-describedby="passwordDescription" placeholder="Hasło">
+        <small id="passwordDescription" class="form-text text-muted">
+        Min. 8 znaków    </small>
+    <form>
+        <div class="form-row">
+            <div class="col-7">
+                <label for="town">Miasto</label>
+                <input type="text" id="town" class="form-control">
+            </div>
+            <div class="col">
+                <label for="state">Województwo</label>
+                <select class="custom-select mr-sm-2" id="state">
+                    <option selected>Wybierz...</option>
+                    <option value="1">dolnośląskie</option>
+                    <option value="2">kujawsko-pomorskie</option>
+                    <option value="3">lubelskie</option>
+                    <option value="4">lubuskie</option>
+                    <option value="5">łódzkie</option>
+                    <option value="6">małopolskie</option>
+                    <option value="7">mazowieckie</option>
+                    <option value="8">opolskie</option>
+                    <option value="9">podkarpackie</option>
+                    <option value="10">podlaskie</option>
+                    <option value="11">pomorskie</option>
+                    <option value="12">śląskie</option>
+                    <option value="13">świętokrzyskie</option>
+                    <option value="14">warmińsko-mazurskie</option>
+                    <option value="15">wielkopolskie</option>
+                    <option value="16">zachodniopomorskie</option>
+                </select>
+            </div>
+            <div class="col">
+                <label for="postNumber">Kod pocztowy</label>
+                <input type="text" id="postNumber" class="form-control">
+            </div>
+        </div>
+    </form>
+    <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+        <label class="form-check-label" for="defaultCheck1">
+            Akceptuję <a href="#">regulamin</a>
+        </label>
+    </div>
+    <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="defaultCheck2" checked>
+        <label class="form-check-label" for="defaultCheck2">
+            Wyrażam zgodę na otrzymywanie informacji marketingowych
+        </label>
+    </div>
+    <button class="btn btn-primary" type="submit">Rejetruj</button>
+</div>
+</body>
+</html>
